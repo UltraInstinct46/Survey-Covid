@@ -1,3 +1,7 @@
+
+import javax.swing.ButtonGroup;
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -8,12 +12,18 @@
  * @author killua
  */
 public class Question_Activity extends javax.swing.JFrame {
-
+boolean empty;
+int array=0;
+int score=0;
+ButtonGroup g = new ButtonGroup();
+Question q = new Question();
     /**
      * Creates new form Question_Activity
      */
     public Question_Activity() {
         initComponents();
+        this.setLocationRelativeTo(null);
+
     }
 
     /**
@@ -26,19 +36,10 @@ public class Question_Activity extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        question_label = new javax.swing.JLabel();
         yes_rb = new javax.swing.JRadioButton();
         no_rb = new javax.swing.JRadioButton();
-        question_label = new javax.swing.JLabel();
         next_button = new javax.swing.JButton();
-
-        yes_rb.setText("Yes");
-        yes_rb.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                yes_rbActionPerformed(evt);
-            }
-        });
-
-        no_rb.setText("No");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1280, 580));
@@ -54,7 +55,21 @@ public class Question_Activity extends javax.swing.JFrame {
         question_label.setMinimumSize(new java.awt.Dimension(610, 92));
         question_label.setPreferredSize(new java.awt.Dimension(610, 92));
 
+        yes_rb.setText("Yes");
+        yes_rb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yes_rbActionPerformed(evt);
+            }
+        });
+
+        no_rb.setText("No");
+
         next_button.setText("Next");
+        next_button.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                next_buttonMouseClicked(evt);
+            }
+        });
         next_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 next_buttonActionPerformed(evt);
@@ -67,7 +82,10 @@ public class Question_Activity extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(31, 31, 31)
-                .addComponent(question_label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(no_rb)
+                    .addComponent(yes_rb)
+                    .addComponent(question_label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(614, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -79,7 +97,11 @@ public class Question_Activity extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(question_label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 242, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(yes_rb)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(no_rb)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 172, Short.MAX_VALUE)
                 .addComponent(next_button)
                 .addGap(46, 46, 46))
         );
@@ -89,6 +111,12 @@ public class Question_Activity extends javax.swing.JFrame {
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
         // TODO add your handling code here:
+            if(array<21){
+            question_label.setText(q.Questions[array]);
+            }else{
+            }
+        g.add(yes_rb);
+        g.add(no_rb);
     }//GEN-LAST:event_formWindowActivated
 
     private void next_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_next_buttonActionPerformed
@@ -97,7 +125,37 @@ public class Question_Activity extends javax.swing.JFrame {
 
     private void yes_rbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yes_rbActionPerformed
         // TODO add your handling code here:
+
     }//GEN-LAST:event_yes_rbActionPerformed
+
+    private void next_buttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_next_buttonMouseClicked
+        // TODO add your handling code here:
+            if(yes_rb.isSelected()){
+                empty=false;
+            }else if(no_rb.isSelected()){
+                empty=false;
+            }else{
+                empty=true;
+            }
+        if(!(empty)){
+            if(yes_rb.isSelected()){
+                score += 1;
+            }else if(no_rb.isSelected()){
+                
+            }
+            g.clearSelection();
+            empty=false;
+            array++;
+            if(array<21){
+            question_label.setText(q.Questions[array]);
+            }else{
+                JOptionPane.showMessageDialog(this,"score : " + score);
+            }
+        }
+        else{
+           JOptionPane.showMessageDialog(this,"Input your option!");
+        }
+    }//GEN-LAST:event_next_buttonMouseClicked
 
     /**
      * @param args the command line arguments
