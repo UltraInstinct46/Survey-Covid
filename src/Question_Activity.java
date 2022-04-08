@@ -171,7 +171,7 @@ Question q = new Question();
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
         // TODO add your handling code here:
-            if(array<21){
+            if(array<q.Questions.length){
             question_label.setText(q.Questions[array]);
             }else{
             }
@@ -201,7 +201,7 @@ Question q = new Question();
             g.clearSelection();
             empty=false;
             array++;
-            if(array<21){
+            if(array<q.Questions.length){
                 question_label.setText(q.Questions[array]);
             }else{
                 JOptionPane.showMessageDialog(this,"score : " + score);

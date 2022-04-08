@@ -28,30 +28,29 @@ public class Question {
             "Saya dalam sehari tidak kena cahaya matahari minimal 15 menit",
             "Saya tidak jalan kaki/berolah raga minimal 30 menit setiap hari",
             "Saya jarang minum vitamin C dan E, dan kurang tidur",
-            "Usia saya diatas 60 tahun",
             "<html>Saya mempunyai penyakit : jantung/diabetes/gangguan pernafasan<br>kronik</html>"
     };
-    public boolean[] Answers = {
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
-    };
+//    public boolean[] Answers = {
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false,
+//            false
+//    };
 }
