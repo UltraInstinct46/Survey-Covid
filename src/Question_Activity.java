@@ -11,6 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author killua
  */
+
 public class Question_Activity extends javax.swing.JFrame {
 boolean empty;
 int array=0;
@@ -36,35 +37,29 @@ Question q = new Question();
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        jPanel1 = new javax.swing.JPanel();
+        next_button = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
         question_label = new javax.swing.JLabel();
         yes_rb = new javax.swing.JRadioButton();
         no_rb = new javax.swing.JRadioButton();
-        next_button = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1280, 580));
+        setBackground(new java.awt.Color(83, 73, 189));
+        setPreferredSize(new java.awt.Dimension(1280, 149));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 formWindowActivated(evt);
             }
         });
 
-        question_label.setFont(new java.awt.Font("sansserif", 0, 38)); // NOI18N
-        question_label.setText("Saya tidak memakai masker pada saat berkumpul dengan orang lain");
-        question_label.setMaximumSize(new java.awt.Dimension(610, 92));
-        question_label.setMinimumSize(new java.awt.Dimension(610, 92));
-        question_label.setPreferredSize(new java.awt.Dimension(610, 92));
+        jPanel1.setBackground(new java.awt.Color(83, 73, 189));
 
-        yes_rb.setText("Yes");
-        yes_rb.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                yes_rbActionPerformed(evt);
-            }
-        });
-
-        no_rb.setText("No");
-
-        next_button.setText("Next");
+        next_button.setBackground(new java.awt.Color(56, 211, 202));
+        next_button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NEXT -_.png"))); // NOI18N
+        next_button.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         next_button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 next_buttonMouseClicked(evt);
@@ -76,34 +71,110 @@ Question q = new Question();
             }
         });
 
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(784, 784, 784)
+                .addComponent(next_button)
+                .addContainerGap(262, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(40, Short.MAX_VALUE)
+                .addComponent(next_button)
+                .addGap(35, 35, 35))
+        );
+
+        jPanel2.setBackground(new java.awt.Color(143, 100, 226));
+
+        question_label.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
+        question_label.setText("Saya tidak memakai masker pada saat berkumpul dengan orang lain");
+        question_label.setToolTipText("");
+        question_label.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        question_label.setMaximumSize(new java.awt.Dimension(610, 92));
+        question_label.setMinimumSize(new java.awt.Dimension(610, 92));
+        question_label.setPreferredSize(new java.awt.Dimension(610, 92));
+
+        yes_rb.setFont(new java.awt.Font("sansserif", 0, 38)); // NOI18N
+        yes_rb.setText("Yes");
+        yes_rb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yes_rbActionPerformed(evt);
+            }
+        });
+
+        no_rb.setFont(new java.awt.Font("sansserif", 0, 38)); // NOI18N
+        no_rb.setText("No");
+        no_rb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                no_rbActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image 5.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(question_label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel1)
+                        .addGap(672, 672, 672))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(no_rb)
+                            .addComponent(yes_rb))
+                        .addGap(182, 182, 182))))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(76, 76, 76)
+                        .addComponent(question_label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(124, 124, 124))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addComponent(yes_rb)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(no_rb)
+                .addGap(112, 112, 112))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(119, 119, 119)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        question_label.getAccessibleContext().setAccessibleDescription("");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(no_rb)
-                    .addComponent(yes_rb)
-                    .addComponent(question_label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(614, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(next_button)
-                .addGap(339, 339, 339))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(question_label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(yes_rb)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(no_rb)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 172, Short.MAX_VALUE)
-                .addComponent(next_button)
-                .addGap(46, 46, 46))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -157,6 +228,10 @@ Question q = new Question();
         }
     }//GEN-LAST:event_next_buttonMouseClicked
 
+    private void no_rbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_no_rbActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_no_rbActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -193,6 +268,10 @@ Question q = new Question();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JButton next_button;
     private javax.swing.JRadioButton no_rb;
     private javax.swing.JLabel question_label;
