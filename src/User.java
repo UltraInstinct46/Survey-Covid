@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -8,8 +11,14 @@
  * @author killua
  */
 public class User {
-        private String name,age,gender,vaccine,result;
-
+        private String name,gender,vaccine,result;
+        private int age;
+        public static ArrayList<String> name_arr = new ArrayList<String>();
+        public static ArrayList<String> gender_arr = new ArrayList<String>();
+        public static ArrayList<String> vaccine_arr = new ArrayList<String>();
+        public static ArrayList<String> result_arr = new ArrayList<String>();
+        public static ArrayList<Integer> age_arr = new ArrayList<Integer>();
+        
     /**
      * @return the name
      */
@@ -27,14 +36,14 @@ public class User {
     /**
      * @return the age
      */
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
     /**
      * @param age the age to set
      */
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 

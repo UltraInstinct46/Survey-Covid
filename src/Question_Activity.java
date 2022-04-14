@@ -16,6 +16,7 @@ public class Question_Activity extends javax.swing.JFrame {
 boolean empty;
 int array=0;
 int score=0;
+static String result = "Default";
 ButtonGroup g = new ButtonGroup();
 Question q = new Question();
     /**
@@ -181,11 +182,7 @@ Question q = new Question();
 
     private void next_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_next_buttonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_next_buttonActionPerformed
-
-    private void next_buttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_next_buttonMouseClicked
-        // TODO add your handling code here:
-        if(yes_rb.isSelected()){
+                if(yes_rb.isSelected()){
             empty=false;
         }else if(no_rb.isSelected()){
             empty=false;
@@ -204,12 +201,27 @@ Question q = new Question();
             if(array<q.Questions.length){
                 question_label.setText(q.Questions[array]);
             }else{
-                JOptionPane.showMessageDialog(this,"score : " + score);
+                if(score<7){
+                  result = "Rendah";  
+                }else if(score<14){
+                    result = "Sedang";
+                }else{
+                    result = "Tinggi";
+                }
+                User_Activity.user.setResult(result);
+                User_Activity.user.result_arr.add(result);
+                Result_Activity r = new Result_Activity();
+                r.setVisible(true);
+                this.setVisible(false);
             }
         }
         else{
             JOptionPane.showMessageDialog(this,"Input your option!");
         }
+    }//GEN-LAST:event_next_buttonActionPerformed
+
+    private void next_buttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_next_buttonMouseClicked
+        // TODO add your handling code here:
     }//GEN-LAST:event_next_buttonMouseClicked
 
     private void no_rbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_no_rbActionPerformed
