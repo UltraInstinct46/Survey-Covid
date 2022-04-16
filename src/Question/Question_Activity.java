@@ -216,6 +216,7 @@ Question q = new Question();
                 }else{
                     result = "Tinggi";
                 }
+                JOptionPane.showMessageDialog(this,"Survey Finished!");
                 User_Activity.user.setResult(result);
                 User_Activity.user.result_arr.add(result);
                 Result_Activity r = new Result_Activity();
