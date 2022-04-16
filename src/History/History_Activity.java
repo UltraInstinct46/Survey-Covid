@@ -1,4 +1,12 @@
+package History;
 
+
+import Menu.Menu;
+import User.*;
+import Menu.*;
+import Question.*;
+import Result.*;
+import History.*;
 import javax.swing.table.DefaultTableModel;
 
 /*
@@ -61,7 +69,7 @@ public class History_Activity extends javax.swing.JFrame {
         jLabel1.setText("HISTORY");
 
         jButton1.setBackground(new java.awt.Color(143, 100, 226));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BACK.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/BACK.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -79,6 +87,7 @@ public class History_Activity extends javax.swing.JFrame {
                 "Name", "Age", "Gender", "Vaccine Status", "Result"
             }
         ));
+        User_Table.setEnabled(false);
         jScrollPane1.setViewportView(User_Table);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);

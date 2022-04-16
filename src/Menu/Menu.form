@@ -90,7 +90,7 @@
               <Color blue="ca" green="d3" red="38" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/HISTORY.png"/>
+              <Image iconType="3" name="/Assets/HISTORY.png"/>
             </Property>
           </Properties>
           <Events>
@@ -103,7 +103,7 @@
               <Color blue="ca" green="d3" red="38" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/start.png"/>
+              <Image iconType="3" name="/Assets/start.png"/>
             </Property>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -117,7 +117,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/covid_background.jpeg"/>
+              <Image iconType="3" name="/Assets/covid_background.jpeg"/>
             </Property>
           </Properties>
         </Component>

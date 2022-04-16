@@ -1,3 +1,14 @@
+package Menu;
+
+
+import User.User_Activity;
+import History.History_Activity;
+import Menu.Menu;
+import User.*;
+import Menu.*;
+import Question.*;
+import Result.*;
+import History.*;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -42,7 +53,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel2.setText("COVID-19 SURVEY");
 
         History_Button.setBackground(new java.awt.Color(56, 211, 202));
-        History_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/HISTORY.png"))); // NOI18N
+        History_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/HISTORY.png"))); // NOI18N
         History_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 History_ButtonActionPerformed(evt);
@@ -50,7 +61,7 @@ public class Menu extends javax.swing.JFrame {
         });
 
         Start_Button.setBackground(new java.awt.Color(56, 211, 202));
-        Start_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/start.png"))); // NOI18N
+        Start_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/start.png"))); // NOI18N
         Start_Button.setToolTipText("");
         Start_Button.setMinimumSize(new java.awt.Dimension(182, 36));
         Start_Button.addActionListener(new java.awt.event.ActionListener() {
@@ -59,7 +70,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/covid_background.jpeg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/covid_background.jpeg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

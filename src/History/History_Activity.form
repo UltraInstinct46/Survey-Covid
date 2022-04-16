@@ -99,7 +99,7 @@
               <Color blue="e2" green="64" red="8f" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/BACK.png"/>
+              <Image iconType="3" name="/Assets/BACK.png"/>
             </Property>
           </Properties>
           <Events>
@@ -133,6 +133,7 @@
                     <Column editable="true" title="Result" type="java.lang.Object"/>
                   </Table>
                 </Property>
+                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
           </SubComponents>

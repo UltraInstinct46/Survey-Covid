@@ -205,7 +205,7 @@
               <Color blue="ca" green="d3" red="38" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/BACK TO MENU.png"/>
+              <Image iconType="3" name="/Assets/BACK TO MENU.png"/>
             </Property>
           </Properties>
           <Events>

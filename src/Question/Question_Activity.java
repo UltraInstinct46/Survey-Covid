@@ -1,7 +1,15 @@
+package Question;
 
+
+import Result.Result_Activity;
 import javax.swing.ButtonGroup;
 import javax.swing.JOptionPane;
-
+import Menu.Menu;
+import User.*;
+import Menu.*;
+import Question.*;
+import Result.*;
+import History.*;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -16,7 +24,7 @@ public class Question_Activity extends javax.swing.JFrame {
 boolean empty;
 int array=0;
 int score=0;
-static String result = "Default";
+public static String result = "Default";
 ButtonGroup g = new ButtonGroup();
 Question q = new Question();
     /**
@@ -81,7 +89,7 @@ Question q = new Question();
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image 5.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/image 5.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -97,7 +105,7 @@ Question q = new Question();
                 .addComponent(jLabel2)
                 .addGap(27, 27, 27)
                 .addComponent(jLabel1)
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -119,7 +127,7 @@ Question q = new Question();
         jPanel1.setBackground(new java.awt.Color(83, 73, 189));
 
         next_button.setBackground(new java.awt.Color(56, 211, 202));
-        next_button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NEXT -_.png"))); // NOI18N
+        next_button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/NEXT -_.png"))); // NOI18N
         next_button.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         next_button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -144,7 +152,7 @@ Question q = new Question();
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(next_button)
                 .addGap(16, 16, 16))
         );

@@ -1,6 +1,15 @@
+package Result;
 
+
+import Question.Question_Activity;
+import Menu.Menu;
 import java.awt.Color;
-
+import Menu.Menu;
+import User.*;
+import Menu.*;
+import Question.*;
+import Result.*;
+import History.*;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -93,7 +102,7 @@ public class Result_Activity extends javax.swing.JFrame {
         jLabel4.setToolTipText("");
 
         jButton1.setBackground(new java.awt.Color(56, 211, 202));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BACK TO MENU.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/BACK TO MENU.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

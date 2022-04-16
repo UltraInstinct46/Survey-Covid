@@ -1,6 +1,14 @@
+package User;
 
+
+import Question.Question_Activity;
 import javax.swing.JOptionPane;
-
+import Menu.Menu;
+import User.*;
+import Menu.*;
+import Question.*;
+import Result.*;
+import History.*;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -51,13 +59,12 @@ public class User_Activity extends javax.swing.JFrame {
         jComboBox2 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1280, 580));
 
         jPanel1.setBackground(new java.awt.Color(143, 100, 226));
 
         jPanel2.setBackground(new java.awt.Color(55, 211, 202));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/People biodata (1).png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/People biodata (1).png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -66,7 +73,7 @@ public class User_Activity extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(34, 34, 34)
                 .addComponent(jLabel8)
-                .addContainerGap(71, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -101,7 +108,7 @@ public class User_Activity extends javax.swing.JFrame {
         jLabel7.setText("VACCINE STATUS");
 
         jTextField6.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField6.setFont(new java.awt.Font("Nirmala UI", 1, 36)); // NOI18N
+        jTextField6.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
         jTextField6.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         jTextField6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
@@ -116,7 +123,7 @@ public class User_Activity extends javax.swing.JFrame {
         });
 
         jTextField8.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField8.setFont(new java.awt.Font("Nirmala UI", 1, 36)); // NOI18N
+        jTextField8.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
         jTextField8.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         jTextField8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jTextField8.addActionListener(new java.awt.event.ActionListener() {
@@ -131,7 +138,7 @@ public class User_Activity extends javax.swing.JFrame {
         });
 
         jButton1.setBackground(new java.awt.Color(56, 211, 202));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/NEXT -_.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/NEXT -_.png"))); // NOI18N
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -140,6 +147,7 @@ public class User_Activity extends javax.swing.JFrame {
         });
 
         jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
+        jComboBox1.setFont(new java.awt.Font("Nirmala UI", 0, 24)); // NOI18N
         jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Female", "Male" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -149,6 +157,7 @@ public class User_Activity extends javax.swing.JFrame {
         });
 
         jComboBox2.setBackground(new java.awt.Color(255, 255, 255));
+        jComboBox2.setFont(new java.awt.Font("Nirmala UI", 0, 24)); // NOI18N
         jComboBox2.setForeground(new java.awt.Color(0, 0, 0));
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Vaccine 1", "Vaccine 2", "Vaccine Booster" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
@@ -221,7 +230,7 @@ public class User_Activity extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel6)
                             .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(76, 76, 76)
                 .addComponent(jButton1)
@@ -234,15 +243,13 @@ public class User_Activity extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(48, 48, 48))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -295,12 +302,18 @@ public class User_Activity extends javax.swing.JFrame {
         if(Character.isDigit(c)){
             evt.consume();
         }
+        if(jTextField6.getText().toString().length( )> 25){
+            evt.consume();
+        }
     }//GEN-LAST:event_jTextField6KeyTyped
 
     private void jTextField8KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField8KeyTyped
         // TODO add your handling code here:
         char c = evt.getKeyChar();
         if(!Character.isDigit(c)){
+            evt.consume();
+        }
+        if(jTextField8.getText().toString().length( )> 2){
             evt.consume();
         }
     }//GEN-LAST:event_jTextField8KeyTyped
