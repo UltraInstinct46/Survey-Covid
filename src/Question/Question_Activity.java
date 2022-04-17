@@ -209,12 +209,38 @@ Question q = new Question();
             if(array<q.Questions.length){
                 question_label.setText(q.Questions[array]);
             }else{
+                if(User_Activity.VACCINE == "-"){
                 if(score<7){
-                  result = "Rendah";  
+                  result = "Rendah";
                 }else if(score<14){
                     result = "Sedang";
                 }else{
                     result = "Tinggi";
+                }
+                }else if(User_Activity.VACCINE == "Vaccine 1"){
+                if(score<8){
+                  result = "Rendah";
+                }else if(score<15){
+                    result = "Sedang";
+                }else{
+                    result = "Tinggi";
+                }
+                }else if(User_Activity.VACCINE == "Vaccine 2"){
+                if(score<9){
+                  result = "Rendah";
+                }else if(score<16){
+                    result = "Sedang";
+                }else{
+                    result = "Tinggi";
+                }
+                }else if(User_Activity.VACCINE == "Vaccine Booster"){
+                if(score<10){
+                  result = "Rendah";
+                }else if(score<17){
+                    result = "Sedang";
+                }else{
+                    result = "Tinggi";
+                }
                 }
                 JOptionPane.showMessageDialog(this,"Survey Finished!");
                 User_Activity.user.setResult(result);
