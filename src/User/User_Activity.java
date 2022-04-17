@@ -52,11 +52,11 @@ public class User_Activity extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
+        Name_Textfield = new javax.swing.JTextField();
+        Age_Textfield = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        Gender_Combobox = new javax.swing.JComboBox<>();
+        Vaccine_Combobox = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -107,33 +107,33 @@ public class User_Activity extends javax.swing.JFrame {
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel7.setText("VACCINE STATUS");
 
-        jTextField6.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField6.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
-        jTextField6.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        Name_Textfield.setBackground(new java.awt.Color(255, 255, 255));
+        Name_Textfield.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
+        Name_Textfield.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        Name_Textfield.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        Name_Textfield.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                Name_TextfieldActionPerformed(evt);
             }
         });
-        jTextField6.addKeyListener(new java.awt.event.KeyAdapter() {
+        Name_Textfield.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                jTextField6KeyTyped(evt);
+                Name_TextfieldKeyTyped(evt);
             }
         });
 
-        jTextField8.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField8.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
-        jTextField8.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        Age_Textfield.setBackground(new java.awt.Color(255, 255, 255));
+        Age_Textfield.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
+        Age_Textfield.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        Age_Textfield.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        Age_Textfield.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                Age_TextfieldActionPerformed(evt);
             }
         });
-        jTextField8.addKeyListener(new java.awt.event.KeyAdapter() {
+        Age_Textfield.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                jTextField8KeyTyped(evt);
+                Age_TextfieldKeyTyped(evt);
             }
         });
 
@@ -146,23 +146,23 @@ public class User_Activity extends javax.swing.JFrame {
             }
         });
 
-        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox1.setFont(new java.awt.Font("Nirmala UI", 0, 24)); // NOI18N
-        jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Female", "Male" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        Gender_Combobox.setBackground(new java.awt.Color(255, 255, 255));
+        Gender_Combobox.setFont(new java.awt.Font("Nirmala UI", 0, 24)); // NOI18N
+        Gender_Combobox.setForeground(new java.awt.Color(0, 0, 0));
+        Gender_Combobox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Female", "Male" }));
+        Gender_Combobox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                Gender_ComboboxActionPerformed(evt);
             }
         });
 
-        jComboBox2.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox2.setFont(new java.awt.Font("Nirmala UI", 0, 24)); // NOI18N
-        jComboBox2.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Vaccine 1", "Vaccine 2", "Vaccine Booster" }));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+        Vaccine_Combobox.setBackground(new java.awt.Color(255, 255, 255));
+        Vaccine_Combobox.setFont(new java.awt.Font("Nirmala UI", 0, 24)); // NOI18N
+        Vaccine_Combobox.setForeground(new java.awt.Color(0, 0, 0));
+        Vaccine_Combobox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Vaccine 1", "Vaccine 2", "Vaccine Booster" }));
+        Vaccine_Combobox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
+                Vaccine_ComboboxActionPerformed(evt);
             }
         });
 
@@ -184,21 +184,21 @@ public class User_Activity extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(Gender_Combobox, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(Age_Textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(0, 0, Short.MAX_VALUE)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(Name_Textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                                .addComponent(Vaccine_Combobox, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                                 .addGap(221, 221, 221))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -221,17 +221,17 @@ public class User_Activity extends javax.swing.JFrame {
                         .addGap(36, 36, 36)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Name_Textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(34, 34, 34)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Age_Textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5))
                         .addGap(30, 30, 30)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel6)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Gender_Combobox, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(Vaccine_Combobox, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(76, 76, 76)
                 .addComponent(jButton1)
                 .addGap(49, 49, 49))
@@ -255,32 +255,32 @@ public class User_Activity extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void Name_TextfieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Name_TextfieldActionPerformed
   
                 
                 
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_Name_TextfieldActionPerformed
     
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void Gender_ComboboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender_ComboboxActionPerformed
       
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_Gender_ComboboxActionPerformed
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+    private void Vaccine_ComboboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Vaccine_ComboboxActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
+    }//GEN-LAST:event_Vaccine_ComboboxActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+    private void Age_TextfieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Age_TextfieldActionPerformed
      
-    }//GEN-LAST:event_jTextField8ActionPerformed
+    }//GEN-LAST:event_Age_TextfieldActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(jTextField6.getText() == null || jTextField8.getText() == null || jComboBox1.getSelectedItem().toString() == "-" || jComboBox2.getSelectedItem().toString() == "-"){
+        if(Name_Textfield.getText().isEmpty() || Age_Textfield.getText().isEmpty() || Gender_Combobox.getSelectedItem().toString() == "-"){
             JOptionPane.showMessageDialog(this,"Empty Is not allowed!");
         }else{
-        NAME = jTextField6.getText();
-        AGE = Integer.parseInt (jTextField8.getText());
-        GENDER = jComboBox1.getSelectedItem().toString();
-        VACCINE = jComboBox2.getSelectedItem().toString();
+        NAME = Name_Textfield.getText();
+        AGE = Integer.parseInt (Age_Textfield.getText());
+        GENDER = Gender_Combobox.getSelectedItem().toString();
+        VACCINE = Vaccine_Combobox.getSelectedItem().toString();
 
         user.name_arr.add(NAME);
         user.age_arr.add(AGE);
@@ -296,27 +296,27 @@ public class User_Activity extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jTextField6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField6KeyTyped
+    private void Name_TextfieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Name_TextfieldKeyTyped
         // TODO add your handling code here:
         char c = evt.getKeyChar();
         if(Character.isDigit(c)){
             evt.consume();
         }
-        if(jTextField6.getText().toString().length( )> 25){
+        if(Name_Textfield.getText().toString().length( )> 25){
             evt.consume();
         }
-    }//GEN-LAST:event_jTextField6KeyTyped
+    }//GEN-LAST:event_Name_TextfieldKeyTyped
 
-    private void jTextField8KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField8KeyTyped
+    private void Age_TextfieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Age_TextfieldKeyTyped
         // TODO add your handling code here:
         char c = evt.getKeyChar();
         if(!Character.isDigit(c)){
             evt.consume();
         }
-        if(jTextField8.getText().toString().length( )> 2){
+        if(Age_Textfield.getText().toString().length( )> 2){
             evt.consume();
         }
-    }//GEN-LAST:event_jTextField8KeyTyped
+    }//GEN-LAST:event_Age_TextfieldKeyTyped
 
     /**
      * @param args the command line arguments
@@ -354,9 +354,11 @@ public class User_Activity extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField Age_Textfield;
+    private javax.swing.JComboBox<String> Gender_Combobox;
+    private javax.swing.JTextField Name_Textfield;
+    private javax.swing.JComboBox<String> Vaccine_Combobox;
     private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -366,7 +368,5 @@ public class User_Activity extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField8;
     // End of variables declaration//GEN-END:variables
 }
