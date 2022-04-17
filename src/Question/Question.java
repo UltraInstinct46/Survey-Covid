@@ -27,7 +27,7 @@ public class Question {
             "Saya dalam sehari tidak kena cahaya matahari minimal 15 menit",
             "Saya tidak jalan kaki atau berolah raga minimal 30 menit setiap hari",
             "Saya jarang minum vitamin C dan E, dan kurang tidur",
-            "<html>Saya mempunyai penyakit : jantung atau diabetes atau gangguan pernafasan<br>kronik</html>"
+            "<html>Saya mempunyai penyakit : jantung atau diabetes atau gangguan pernafasan kronik</html>"
     };
 //    public boolean[] Answers = {
 //            false,
