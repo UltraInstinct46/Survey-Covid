@@ -19,7 +19,7 @@ import History.*;
  *
  * @author killua
  */
-
+//inheritance
 public class Question_Activity extends javax.swing.JFrame {
 boolean empty;
 int array=0;
@@ -34,6 +34,72 @@ Question q = new Question();
         initComponents();
         this.setLocationRelativeTo(null);
 
+    }
+    //method score();
+    void score(){
+         if(yes_rb.isSelected()){
+            empty=false;
+        }else if(no_rb.isSelected()){
+            empty=false;
+        }else{
+            empty=true;
+        }
+        if(!(empty)){
+            if(yes_rb.isSelected()){
+                score += 1;
+            }else if(no_rb.isSelected()){
+
+            }
+            g.clearSelection();
+            empty=false;
+            array++;
+            if(array<q.Questions.length){
+                question_label.setText(q.Questions[array]);
+            }else{
+                if(User_Activity.VACCINE == "-"){
+                if(score<7){
+                  result = "Rendah";
+                }else if(score<14){
+                    result = "Sedang";
+                }else{
+                    result = "Tinggi";
+                }
+                }else if(User_Activity.VACCINE == "Vaccine 1"){
+                if(score<8){
+                  result = "Rendah";
+                }else if(score<15){
+                    result = "Sedang";
+                }else{
+                    result = "Tinggi";
+                }
+                }else if(User_Activity.VACCINE == "Vaccine 2"){
+                if(score<9){
+                  result = "Rendah";
+                }else if(score<16){
+                    result = "Sedang";
+                }else{
+                    result = "Tinggi";
+                }
+                }else if(User_Activity.VACCINE == "Vaccine Booster"){
+                if(score<10){
+                  result = "Rendah";
+                }else if(score<17){
+                    result = "Sedang";
+                }else{
+                    result = "Tinggi";
+                }
+                }
+                JOptionPane.showMessageDialog(this,"Survey Finished!");
+                User_Activity.user.setResult(result);
+                User_Activity.user.result_arr.add(result);
+                Result_Activity r = new Result_Activity();
+                r.setVisible(true);
+                this.setVisible(false);
+            }
+        }
+        else{
+            JOptionPane.showMessageDialog(this,"Input your option!");
+        }
     }
 
     /**
@@ -190,69 +256,8 @@ Question q = new Question();
 
     private void next_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_next_buttonActionPerformed
         // TODO add your handling code here:
-                if(yes_rb.isSelected()){
-            empty=false;
-        }else if(no_rb.isSelected()){
-            empty=false;
-        }else{
-            empty=true;
-        }
-        if(!(empty)){
-            if(yes_rb.isSelected()){
-                score += 1;
-            }else if(no_rb.isSelected()){
-
-            }
-            g.clearSelection();
-            empty=false;
-            array++;
-            if(array<q.Questions.length){
-                question_label.setText(q.Questions[array]);
-            }else{
-                if(User_Activity.VACCINE == "-"){
-                if(score<7){
-                  result = "Rendah";
-                }else if(score<14){
-                    result = "Sedang";
-                }else{
-                    result = "Tinggi";
-                }
-                }else if(User_Activity.VACCINE == "Vaccine 1"){
-                if(score<8){
-                  result = "Rendah";
-                }else if(score<15){
-                    result = "Sedang";
-                }else{
-                    result = "Tinggi";
-                }
-                }else if(User_Activity.VACCINE == "Vaccine 2"){
-                if(score<9){
-                  result = "Rendah";
-                }else if(score<16){
-                    result = "Sedang";
-                }else{
-                    result = "Tinggi";
-                }
-                }else if(User_Activity.VACCINE == "Vaccine Booster"){
-                if(score<10){
-                  result = "Rendah";
-                }else if(score<17){
-                    result = "Sedang";
-                }else{
-                    result = "Tinggi";
-                }
-                }
-                JOptionPane.showMessageDialog(this,"Survey Finished!");
-                User_Activity.user.setResult(result);
-                User_Activity.user.result_arr.add(result);
-                Result_Activity r = new Result_Activity();
-                r.setVisible(true);
-                this.setVisible(false);
-            }
-        }
-        else{
-            JOptionPane.showMessageDialog(this,"Input your option!");
-        }
+        //call score() method;
+        score();
     }//GEN-LAST:event_next_buttonActionPerformed
 
     private void next_buttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_next_buttonMouseClicked
@@ -270,6 +275,7 @@ Question q = new Question();
     /**
      * @param args the command line arguments
      */
+    //polymorphism
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

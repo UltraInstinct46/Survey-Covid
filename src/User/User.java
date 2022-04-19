@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class User {
         private String name,gender,vaccine,result;
         private int age;
+        //Arraylist Implementation
         public static ArrayList<String> name_arr = new ArrayList<String>();
         public static ArrayList<String> gender_arr = new ArrayList<String>();
         public static ArrayList<String> vaccine_arr = new ArrayList<String>();
@@ -24,6 +25,7 @@ public class User {
     /**
      * @return the name
      */
+    //ecapsulation
     public String getName() {
         return name;
     }

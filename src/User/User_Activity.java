@@ -18,6 +18,7 @@ import History.*;
  *
  * @author LENOVO
  */
+//inheritance 
 public class User_Activity extends javax.swing.JFrame {
         public static String NAME;
         public static int AGE = 0;
@@ -321,6 +322,7 @@ public class User_Activity extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+    //polymorphism
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

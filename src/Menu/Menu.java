@@ -18,6 +18,7 @@ import History.*;
  *
  * @author LENOVO
  */
+//inheritance
 public class Menu extends javax.swing.JFrame {
 
     /**
@@ -129,6 +130,7 @@ public class Menu extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+    //polymorphism
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

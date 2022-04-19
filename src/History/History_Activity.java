@@ -18,6 +18,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author killua
  */
+//inheritance
 public class History_Activity extends javax.swing.JFrame {
 
     /**
@@ -145,6 +146,7 @@ public class History_Activity extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+    //polymorphism
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

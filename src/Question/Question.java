@@ -10,6 +10,7 @@ package Question;
  * @author killua
  */
 public class Question {
+    //Array implementation
     public String[] Questions={
             "<html>Saya pergi keluar rumah</html>",
             "<html>Saya menggunakan transportasi umum: online, angkot, bus, taksi,<br>kereta api</html>",
